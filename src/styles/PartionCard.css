@@ -1,0 +1,69 @@
+/* Container for the whole card */
+.partitioned-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Text half of the card */
+.partitioned-card-text {
+  background-color: #4f2c54; /* Set background to #4f2c54 */
+  color: #e8e3de; /* Set text color to #e8e3de */
+  padding: 5%; /* Add 5% padding around the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the text horizontally and vertically */
+  text-align: center; /* Ensure text is centered */
+}
+
+/* Image half of the card */
+.partitioned-card-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* Title styling */
+.card-title {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: 600; /* Equivalent to font-semibold */
+  margin-bottom: 0.75rem; /* Equivalent to mb-3 */
+}
+
+/* Description styling */
+.card-description {
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+  color: #e2e8f0; /* Equivalent to text-gray-200 */
+}
+
+/* Image styling */
+.card-image {
+  width: 100%;
+  height: 24rem; /* Equivalent to h-96 */
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-image {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Adding the fadeIn animation via custom class */
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+}
