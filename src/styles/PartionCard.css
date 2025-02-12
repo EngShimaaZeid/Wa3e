@@ -13,7 +13,7 @@
 .partitioned-card-text {
   background-color: #4f2c54; /* Set background to #4f2c54 */
   color: #e8e3de; /* Set text color to #e8e3de */
-  padding: 5%; /* Add 5% padding around the text */
+  padding: 15%; /* Add 5% padding around the text */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +58,4 @@
     flex-direction: column;
   }
   
-  .partitioned-card-image {
-    margin-top: 20px;
-  }
 }

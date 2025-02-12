@@ -51,6 +51,7 @@
   height: 100%;
   background-color: #000300;
   transition: left 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .mobile-nav-open {
