@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import "../styles/VariableProximity.css";
 
 function useAnimationFrame(callback) {
-    const ref = useRef(null);
   useEffect(() => {
     let frameId;
     const loop = () => {
@@ -138,7 +137,7 @@ const VariableProximity = forwardRef((props, ref) => {
 
   return (
     <span
-      ref={ref}
+      ref={ref}  // Use the ref here to pass it down to the parent
       className={`${className} variable-proximity`}
       onClick={onClick}
       style={{ display: "inline", ...style }}
