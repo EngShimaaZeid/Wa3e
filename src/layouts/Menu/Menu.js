@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import logoImg from '../../assets/images/logo.png';
 import Search from '../../components/Search';
 import Sign from '../../components/Sign';
 import MenuButton from '../../UI/MenuButton';
+import { Link } from 'react-router-dom';
 
 // Button data for Lowmenu
 const buttonData = [
@@ -35,16 +36,16 @@ const Menu = () => {
       >
         <ul className="flex flex-row flex-nowrap items-center lg:px-16 font-thin sm:text-[2px] md:text-sm lg:text-base space-x-[6px] sm:space-x-2 md:space-x-3 rtl:space-x-reverse overflow-hidden text-white">
           <li>
-            <a href="#" className="block py-2 px-2 hover:text-mint hover:underline transition-colors sm:text-xss">من نحن</a>
+            <Link to="/" className="block py-2 px-2 hover:text-mint hover:underline transition-colors sm:text-xss">من نحن</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 px-2 hover:text-mint hover:underline transition-colors">فعاليات</a>
+            <Link to="/"className="block py-2 px-2 hover:text-mint hover:underline transition-colors">فعاليات</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 px-2 hover:text-mint hover:underline transition-colors">مواضيع هامه</a>
+            <Link to="/"className="block py-2 px-2 hover:text-mint hover:underline transition-colors">مواضيع هامه</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 px-2 hover:text-mint hover:underline transition-colors">مصادر المعرفه والدعم</a>
+            <Link to="/" className="block py-2 px-2 hover:text-mint hover:underline transition-colors">مصادر المعرفه والدعم</Link>
           </li>
         </ul>
 
