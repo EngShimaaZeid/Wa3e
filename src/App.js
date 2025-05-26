@@ -1,27 +1,22 @@
-import './App.css';
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
-import PartitionCard from './components/PartionCard';
-import PartitionCardImage from './assets/partioncard.jpg'; // Import your image
-import CardContainer from './components/CardContainer';
-import SplashCursor from './bits/SplashCarusel'
-import QuoteContainer from './components/QuoteContainer';
-import Footer from "./components/Footer"
+
+import Footer from "./layouts/Footer";
+import LargeCarousel from "./components/LargeCarousel"
+import ThreeShields from "./containers/ThreeShields"
+import HorizontalCardContainer from "./containers/HorizontalCardContainer"
+import Menu from "./layouts/Menu/Menu"
+import CardCarouselContainer from "./containers/CardCarouselContainer";
+import CardItemContainer from "./containers/CardItemContainer";
+import ImageCarousel from "./components/SmallImagesCarousel";
 function App() {
   return (
-    <div className="App">
-     <SplashCursor />
-
-      <Navbar/>
-      <Header/>
-      <CardContainer/>
-
-      <PartitionCard 
-            title={"Website Name"} 
-          
-            image={PartitionCardImage} 
-          />
-      <QuoteContainer/>
+    <div class="font-kufi">
+      <Menu/>
+      <LargeCarousel/>
+      <ThreeShields/>
+      <ImageCarousel/>
+      <HorizontalCardContainer/>
+      <CardCarouselContainer/>
+      <CardItemContainer/>
       <Footer/>
     </div>
   );
