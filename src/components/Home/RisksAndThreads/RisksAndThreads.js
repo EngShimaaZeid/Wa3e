@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import ShieldIcon from "../UI/ShieldIcon";
+import ShieldIcon from "../../UI/ShieldIcon";
 import { FaUsers } from 'react-icons/fa';
 // Import Swiper styles globally (should ideally be in _app.js or index.js)
 import "swiper/css";
@@ -9,12 +9,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // Import images
-import img1 from "../assets/images/imgcar00.png";
-import img2 from "../assets/images/imgcar0.png";
-import img3 from "../assets/images/imgcar1.png";
-import img4 from "../assets/images/imgcar2.png";
-import img5 from "../assets/images/imgcar3.png";
-import img6 from "../assets/images/imgcar4.png";
+import img1 from "../../../assets/images/imgcar00.png";
+import img2 from "../../../assets/images/imgcar0.png";
+import img3 from "../../../assets/images/imgcar1.png";
+import img4 from "../../../assets/images/imgcar2.png";
+import img5 from "../../../assets/images/imgcar3.png";
+import img6 from "../../../assets/images/imgcar4.png";
 
 const cards = [
   { id: 1, src: img1, title: "محتوى غير لائق" },
@@ -42,10 +42,11 @@ const ImageCarousel = () => {
   }
 
   return (
-    <div className="p-24 py-12 bg-babyblue">
-        <div className="text-primaryBlue text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-end sm:justify-end md:justify-end lg:justify-center gap-4 sm:gap-2 md:gap-2 text-center sm:text-right">
+    <div className="p-12 bg-babyblue">
+       <div className="text-primaryBlue text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-end sm:justify-end md:justify-end lg:justify-center gap-4 sm:gap-2 md:gap-2 text-center sm:text-right">
     
           <div className="text-right sm:w-1/2 md:w-1/3 lg:w-auto sm:pr-2 md:pr-4">
+    
         أهم المخاطر والتهديدات الإلكترونيه 
           </div>
 
@@ -91,32 +92,10 @@ const ImageCarousel = () => {
 
       {/* Custom Arrows */}
       <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-10">
-        <button className="swiper-button-prev bg-white rounded-full p-2 shadow-md">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
+       
       </div>
       <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-10 " >
-        <button className="swiper-button-next bg-white rounded-full p-2 shadow-md">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        
       </div>
     </div>
     </div>

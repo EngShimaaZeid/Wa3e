@@ -1,7 +1,6 @@
-import React from 'react';
-import ShieldIcon from "../UI/ShieldIcon";
+import ShieldIcon from "../../UI/ShieldIcon";
 import { FaUser } from 'react-icons/fa';
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 
 const Sign = () => {
   return (

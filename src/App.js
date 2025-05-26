@@ -1,12 +1,17 @@
 import { BrowserRouter as Router } from "react-router-dom"; // Add this import
-import Footer from "./layouts/Footer";
-import LargeCarousel from "./components/LargeCarousel";
-import ThreeShields from "./containers/ThreeShields";
-import HorizontalCardContainer from "./containers/HorizontalCardContainer";
-import Menu from "./layouts/Menu/Menu";
-import CardCarouselContainer from "./containers/CardCarouselContainer";
-import CardItemContainer from "./containers/CardItemContainer";
-import ImageCarousel from "./components/SmallImagesCarousel";
+import Menu from "./components/layouts/Menu/Menu";
+import LargeCarousel from "./components/Home/LargeCarousel/LargeCarousel";
+import WhatWeDo from "./components/Home/WhatWeDo/WhatWeDoContainer";
+import RisksAndThreads from "./components/Home/RisksAndThreads/RisksAndThreads";
+import Support from "./components/Home/Support/SupportContainer";
+import Events from "./components/Home/Events/EventsContainer"
+import QuickMenu from "./components/Home/QuickMenu/QuickMenuContainer";
+import Footer from "./components/layouts/Footer";
+
+//import HorizontalCardContainer from "./containers/HorizontalCardContainer";
+//import CardCarouselContainer from "./containers/CardCarouselContainer";
+//import CardItemContainer from "./containers/CardItemContainer";
+//import ImageCarousel from "./components/SmallImagesCarousel";
 
 function App() {
   return (
@@ -14,11 +19,11 @@ function App() {
       <div className="font-kufi">
         <Menu/>
         <LargeCarousel/>
-        <ThreeShields/>
-        <ImageCarousel/>
-        <HorizontalCardContainer/>
-        <CardCarouselContainer/>
-        <CardItemContainer/>
+        <WhatWeDo/>
+        <RisksAndThreads/>
+        <Support/>
+        <Events/>
+        <QuickMenu/>
         <Footer/>
       </div>
     </Router>

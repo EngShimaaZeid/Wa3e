@@ -1,5 +1,5 @@
 // CardsContainer.js
-import CardItem from '../components/CardItem';
+import QuickMenuCard from './QuickMenuCard';
 const data = [
   { id: 1, text: "لوريم ابسم 1" },
   { id: 2, text: "لوريم ابسم 2" },
@@ -12,7 +12,7 @@ const data = [
   { id: 9, text: "لوريم ابسم 9" },
 ];
 
-const CardItemContainer = () => {
+const QuickMenuContainer = () => {
   return (
     <div className='p-24 pt-12 bg-babyblue rounded-t-full'>
       
@@ -26,21 +26,21 @@ const CardItemContainer = () => {
       {/* Row 1 */}
       <div className="flex justify-between gap-4 ">
         {data.slice(0, 3).map(item => (
-          <CardItem key={item.id} text={item.text} />
+          <QuickMenuCard key={item.id} text={item.text} />
         ))}
       </div>
 
       {/* Row 2 */}
       <div className="flex justify-between gap-4">
         {data.slice(3, 6).map(item => (
-          <CardItem key={item.id} text={item.text} />
+          <QuickMenuCard key={item.id} text={item.text} />
         ))}
       </div>
 
       {/* Row 3 */}
       <div className="flex justify-between gap-4">
         {data.slice(6, 9).map(item => (
-          <CardItem key={item.id} text={item.text} />
+          <QuickMenuCard key={item.id} text={item.text} />
         ))
     }
       </div>
@@ -49,4 +49,4 @@ const CardItemContainer = () => {
   );
 };
 
-export default CardItemContainer;
+export default QuickMenuContainer;

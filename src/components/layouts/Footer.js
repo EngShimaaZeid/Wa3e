@@ -1,5 +1,4 @@
-import React from 'react'
-import footerImg from '../assets/images/footer.png'; // adjust path as needed
+import footerImg from '../../assets/images/footer.png'; 
 import Button from '../UI/Button';
 import ShieldIcon from '../UI/ShieldIcon';
 import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa';

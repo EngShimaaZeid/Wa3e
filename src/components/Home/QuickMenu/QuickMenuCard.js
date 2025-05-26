@@ -1,5 +1,4 @@
-import React from 'react';
-import ShieldIcon from "../UI/ShieldIcon";
+import ShieldIcon from "../../UI/ShieldIcon";
 
 const CardItem = () => {
   return (

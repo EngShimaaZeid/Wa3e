@@ -17,6 +17,7 @@ module.exports = {
         lightgreen:'#78D5D7',
         darkgreen:'#07A0A0',
         red:'#DB7575',
+        lightred:'#DB7575',
         babyblue:'#F3F7FB',
         darkred:'#C63030',
         shineyellow:'#C0A533',
@@ -28,7 +29,7 @@ module.exports = {
         '12xl': '12rem',     // 64px
       },
       fontSize: {
-        'xxs': '0.625rem',  // add a new smaller size called 'xxs'
+        'xxs': '0.5rem',  // add a new smaller size called 'xxs'
       },
     },  },
   plugins: [],

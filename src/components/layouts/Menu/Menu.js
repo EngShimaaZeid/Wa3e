@@ -1,8 +1,8 @@
 import  { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
-import logoImg from '../../assets/images/logo.png';
-import Search from '../../components/Search';
-import Sign from '../../components/Sign';
+import logoImg from '../../../assets/images/logo.png';
+import Search from './Search';
+import Sign from './Sign';
 import MenuButton from '../../UI/MenuButton';
 import { Link } from 'react-router-dom';
 
@@ -34,18 +34,18 @@ const Menu = () => {
         dir="rtl"
         className="bg-primaryBlue w-full z-20 top-0 start-0 rounded-b-3xl h-12 flex items-center justify-between px-4"
       >
-        <ul className="flex flex-row flex-nowrap items-center lg:px-16 font-thin sm:text-[2px] md:text-sm lg:text-base space-x-[6px] sm:space-x-2 md:space-x-3 rtl:space-x-reverse overflow-hidden text-white">
+        <ul className="flex flex-row flex-nowrap md:px-2 items-center lg:px-16 font-thin sm:text-[.05px] md:text-sm lg:text-base space-x-[6px] sm:space-x-2 md:space-x-3 rtl:space-x-reverse overflow-hidden text-white">
           <li>
-            <Link to="/" className="block py-2 px-2 hover:text-mint hover:underline transition-colors sm:text-xss">من نحن</Link>
+            <Link to="/" className="block py-2 md:px-2 hover:text-mint hover:underline transition-colors sm:text-[.01px] sm:px-1">من نحن</Link>
           </li>
           <li>
-            <Link to="/"className="block py-2 px-2 hover:text-mint hover:underline transition-colors">فعاليات</Link>
+            <Link to="/"className="block py-2 md:px-2 hover:text-mint hover:underline transition-colors  sm:text-[.01px] sm:px-1">فعاليات</Link>
           </li>
           <li>
-            <Link to="/"className="block py-2 px-2 hover:text-mint hover:underline transition-colors">مواضيع هامه</Link>
+            <Link to="/"className="block py-2 md:px-2 hover:text-mint hover:underline transition-colors sm:text-[.01px] sm:px-2">مواضيع هامه</Link>
           </li>
           <li>
-            <Link to="/" className="block py-2 px-2 hover:text-mint hover:underline transition-colors">مصادر المعرفه والدعم</Link>
+            <Link to="/" className="block py-2 md:px-2 hover:text-mint hover:underline transition-colors  sm:text-[.01px] sm:px-2">مصادر المعرفه والدعم</Link>
           </li>
         </ul>
 

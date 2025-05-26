@@ -1,8 +1,8 @@
-import ShieldCard from "../UI/ShiledCard";
+import ShieldCard from "./WhatWeDoCard";
 import { FaUsers } from 'react-icons/fa';
 import { FaProjectDiagram, FaChalkboardTeacher, FaRegLightbulb } from "react-icons/fa";
-import ShieldIcon from '../UI/ShieldIcon';
-const ThreeShields = () => {
+import ShieldIcon from '../../UI/ShieldIcon';
+const WhatWeDoContainer = () => {
     const cards = [
         {
           title: "التشبيك",
@@ -23,10 +23,11 @@ const ThreeShields = () => {
     
 
   return (
-    <div className='p-24 pt-12'>
-        <div className="text-primaryBlue text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-end sm:justify-end md:justify-end lg:justify-center gap-4 sm:gap-2 md:gap-2 text-center sm:text-right">
+    <div className='p-12'>
+         <div className="text-primaryBlue text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-end sm:justify-end md:justify-end lg:justify-center gap-4 sm:gap-2 md:gap-2 text-center sm:text-right">
     
           <div className="text-right sm:w-1/2 md:w-1/3 lg:w-auto sm:pr-2 md:pr-4">
+    
         تعرف على ماذا نفعل 
           </div>
 
@@ -67,4 +68,4 @@ const ThreeShields = () => {
   );
 };
 
-export default ThreeShields;
+export default WhatWeDoContainer;

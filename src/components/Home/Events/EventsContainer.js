@@ -3,11 +3,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import ShieldIcon from "../UI/ShieldIcon";
+import ShieldIcon from "../../UI/ShieldIcon";
 import { FaUsers } from 'react-icons/fa';
 
-// Import your dynamic card component
-import CardCarousel from "../components/CardCarousel";
+import EventsCard from "./EventsCard";
 
 // Your data array
 const carouselData = [
@@ -39,7 +38,7 @@ const carouselData = [
   
 ];
 
-const CardCarouselContainer = () => {
+const EventsContainer = () => {
   return (
     <div>
        <div className="w-full relative p-6 sm:p-10 md:p-16 lg:p-20 border-gray-500 rounded-md">
@@ -79,7 +78,7 @@ const CardCarouselContainer = () => {
         {/* Map through data and create SwiperSlides */}
         {carouselData.map((item, index) => (
           <SwiperSlide key={index} >
-            <CardCarousel {...item} />
+            <EventsCard {...item} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -133,4 +132,4 @@ const CardCarouselContainer = () => {
   );
 };
 
-export default CardCarouselContainer;
+export default EventsContainer;

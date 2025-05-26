@@ -1,6 +1,6 @@
-import ShieldIcon from "../UI/ShieldIcon";
+import ShieldIcon from "../../UI/ShieldIcon";
 
-import img from "../assets/images/imgcardcar.png"
+import img from "../../../assets/images/imgcardcar.png"
 const CardCarousel = ({ category, title, description, bgColor = "bg-blue-500" }) => {
   return (
     <div className="flex flex-col md:flex-row bg-white shadow-md overflow-hidden border-2 border-gray-100 rounded-3xl
