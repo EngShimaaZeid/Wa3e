@@ -4,8 +4,8 @@ import Button from "../../UI/Button";
 
 const Sign = () => {
   return (
-    <div className="flex items-center justify-center w-60 pr-8 " dir="rtl">
-      <div className="relative inline-block group">
+    <div className="relative flex items-center justify-center w-60 pr-8 " dir="rtl">
+      <div className="absolute inline-block group">
         {/* Shield Icon with group-hover support */}
         <div className="absolute -top-4 -start-2 z-10 px-48 pointer-events-none">
           <ShieldIcon
