@@ -1,0 +1,16 @@
+.swiper-pagination-bullet {
+ width: 20px;              /* make dots bigger */
+  height: 20px;
+  background-color: white;  /* dot fill */
+  border: 2px solid #165eb2;    /* red border */
+  opacity: 1;               /* fully visible */
+  box-sizing: border-box;   /* ensure border is inside size */
+  border-radius: 50%;       /* keep them circular */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2ee5c2 !important;
+    border: 3px solid #2ee5c2;    /* red border */
+
+}

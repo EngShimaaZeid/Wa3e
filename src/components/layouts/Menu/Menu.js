@@ -63,7 +63,7 @@ const Menu = () => {
 
       {/* ======================== Middlemenu ======================== */}
       <nav dir="rtl" className="bg-white w-full z-10 top-0 start-0 rounded-b-3xl px-12">
-        <div className="max-w-screen-xl mx-auto px-4 py-2 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div className="max-w-screen-xl mx-auto px-4 pr-8 pt-4 pb-12 py-2 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           {/* Logo */}
           <div className="flex justify-center lg:justify-start">
             <img src={logoImg} alt="Logo" className="h-20 py-1 pr-2 pl-22 rounded-lg" />
@@ -71,7 +71,7 @@ const Menu = () => {
 
           {/* Search + Sign */}
           <div className="flex flex-col md:flex-row lg:gap-xl-8  lg:flex-row pl-12 lg:pr-8 w-full md:justify-between lg:justify-end items-center   gap-8">
-            <div className="w-full md:w-auto md:justify-center sm:gap-y-36">
+            <div className="w-full md:w-auto md:justify-center sm:gap-y-40">
               <Search />
             </div>
             <div className="w-full flex justify-center md:justify-center md:w-auto">
@@ -88,7 +88,7 @@ const Menu = () => {
           {reversedButtons.map((btn, index) => (
             <div
               key={index}
-              className="transition-transform transform hover:scale-y-125 duration-200"
+              className="transition-transform transform hover:scale-y-125 duration-200 hover:translate-y-1.5"
             >
               <MenuButton
                 title={btn.title}
@@ -101,7 +101,7 @@ const Menu = () => {
 
         {/* Mobile vertical menu (visible when menuOpen is true) */}
         {menuOpen && (
-          <div className="sm:hidden flex flex-col px-4 pb-4 border-t border-gray-300">
+          <div className="sm:hidden flex flex-col px-4 pb-4  border-t border-gray-300">
             {reversedButtons.map((btn, index) => (
               <button
                 key={index}

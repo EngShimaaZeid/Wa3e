@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import ShieldIcon from "../../UI/ShieldIcon";
 import { FaUsers } from 'react-icons/fa';
-
+import "./MySwiperComponent.css"
 import EventsCard from "./EventsCard";
 
 // Your data array
@@ -39,12 +39,10 @@ const carouselData = [
 ];
 
 const EventsContainer = () => {
-  
   return (
-    
     <div>
-       <div className="  w-[70vw] relative px-48 pb-24  rounded-md">
-        <div className="text-primaryBlue text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-end sm:justify-end md:justify-end lg:justify-center gap-4 sm:gap-2 md:gap-2 text-center sm:text-right px-24" >
+       <div className="  w-[70vw] relative lg:px-48  rounded-md p-12">
+        <div className="text-primaryBlue text-xl sm:text-2xl md:text-4xl font-bold flex items-center justify-end sm:justify-end md:justify-end lg:justify-center gap-4 sm:gap-2 md:gap-2 text-center sm:text-right px-16 ">
     
           <div className="text-right sm:w-1/2 md:w-1/3 lg:w-auto sm:pr-2 md:pr-4">
         آخر الفعاليات 
@@ -87,7 +85,7 @@ const EventsContainer = () => {
 
       {/* Navigation Buttons */}
       <div className="  flex items-center justify-between mt-4 w-[50vw] ">
-        <button className=" swiper-button-prev group p-2 flex justify-center items-center border border-solid border-white w-12 h-12 transition-all duration-500 rounded-full px-24">
+        <button className=" swiper-button-prev group p-2 flex justify-center items-center border border-solid border-white w-12 h-12 transition-all duration-500 rounded-full px-16">
           <svg
             className="h-5 w-5 text-primaryBlue group-hover:text-white "
             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +104,7 @@ const EventsContainer = () => {
           </svg>
         </button>
 
-        <button className=" swiper-button-next group  flex justify-center items-center border-solid border-white w-12 h-12 transition-all duration-500 px-24 ">
+        <button className=" swiper-button-next group  flex justify-center items-center border-solid border-white w-12 h-12 transition-all duration-500 px-16 ">
           <svg
             className="h-5 w-5 "
             xmlns="http://www.w3.org/2000/svg"
@@ -128,10 +126,7 @@ const EventsContainer = () => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="swiper-pagination  mt-4 pb-32 border-primaryBlue ">
-          
-
-      </div>
+<div className="swiper-pagination flex justify-center gap-[4px] mt-8 pb-2 mx-auto"></div>
     </div>
     </div>
     
